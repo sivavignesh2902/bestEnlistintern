@@ -4,32 +4,22 @@
 	<title>javascript method array</title>
 </head>
 <body>
-	<script type="text/javascript">
-		function befindobject(n) {
-			var arr = [{name: "john", age: "27"},{name: "siva", age: "26"}];
-			
-			
-				for(var i=0;i<arr.length;i++){
-					if(n == name){
-						document.write(arr[i].name);
-						document.write("<br>");
-						
-					}
-				
-					else{
+<script type="text/javascript">
+	Array.prototype.beFindObject = function(property) {
+		var arr =[];
+		this.forEach((item) => {
+			arr.push(item[property]);
 
-						document.write(arr[i].age);
-					}
-				
-				}
-			}
-		
-		
-		befindobject(name);
+			});
+		return arr;
+		};
+		var input = [{name:"siva",age:27},{name:"john",age:37}];
+		document.write(input.beFindObject('name'));
+		document.write("\n ");
+		document.write(input.beFindObject('age'));
 
-		
 	
-	</script>
+</script>
 
 </body>
 </html>
