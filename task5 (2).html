@@ -5,16 +5,19 @@
 </head>
 <body>
 	<script type="text/javascript">
-		function vowl(t) { 
-	for (var i in t.split('')) { 
-		if (['a', 'e', 'i', 'o', 'u','A','E','I','O','U'].includes(t.split('')[i])) { 
-			document.write(t.split('')[i]); 
-		} 
-	} 
+			String.prototype.bevowel = function() {
+			return this.split("")
+			.map(function(i) {
+				if(i === "A" ||i === "e" || i === "E" || i === "I" ||i === "O" ||i === "U" ||i === "a" ||i ==="i" ||i === "o" ||i === "u"){
+					return i;
+				}
+				return null;
 
-	} 
-
-vowl("siva");
+				
+			})
+			.join("");
+		};
+	document.write("hello".bevowel());
 	</script>
 
 </body>
