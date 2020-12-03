@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS beaddobject</title>
+</head>
+<body>
+<script type="text/javascript">
+	Array.prototype.beaddobject = function(name,val) {
+		this.forEach(function(object) {
+			object[name] = val;
+			
+		});
+	return this;	
+	};
+
+	var sampleinput = [{name:"John",age:26},{name:"siva",age:27}];
+	console.log(sampleinput.beaddobject("country", "india"));
+</script>
+</body>
+</html>
