@@ -5,17 +5,11 @@
 </head>
 <body>
 <script type="text/javascript">
-	function bespacify(gnstr) {
-		var i;
-		for(i = 0;i < gnstr.length;i++){
-			document.write(gnstr.slice(i,i+1));
-			document.write("\n");
-		}
-		
-		
-	
-	}
-bespacify("hello");
+String.prototype.bespacify = function() {
+		return this.split('').join(" ");
+	};
+document.write("hello".bespacify());
+
 
 </script>
 </body>
