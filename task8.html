@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<body>
+<script type="text/javascript">
+	Array.prototype.beremoveobject = function(c) {
+		arr = this;
+		this.forEach(function(x) {
+			delete x[c];
+				})
+		console.log(arr);
+	};
+	
+
+	sampleinput = [{name:"John",age:26,country:"India"},{name:"siva",age:27,country:"India"}];
+	sampleinput.beremoveobject("country");
+
+</script>
+</body>
+</html>
