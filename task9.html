@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		Array.prototype.beremoveduplicate = function() {
+			gnarray = this.slice().sort();
+			var dup = [];
+			for(var i=0;i<this.length;i++){
+				if(gnarray[i + 1]==gnarray[i]){
+					dup.push(gnarray[i]);
+				}	
+		
+				
+			}
+			console.log(dup);
+		
+
+			
+		};
+		
+		sampleinput = [1,2,4,5,2,5];
+		sampleinput.beremoveduplicate();
+	</script>
+
+</body>
+</html>
