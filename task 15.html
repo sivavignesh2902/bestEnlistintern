@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	Number.prototype.maskcurr = function() {
+		var neobj = new Intl.NumberFormat('en-IN');
+		console.log(neobj.format(this));
+		
+	}
+	input = 1000;
+	input.maskcurr();
+</script>
+</body>
+</html>
