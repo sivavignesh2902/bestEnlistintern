@@ -1,0 +1,11 @@
+#body
+{
+    scroll-behavior: smooth;
+    background-color: beige;
+    text-align: center;
+}
+.nav-item
+{
+    font-size: 25px;
+    padding: 10px;
+}
