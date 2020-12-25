@@ -1,0 +1,80 @@
+body
+{
+  scroll-behavior: smooth;
+  margin: 2%;
+}
+a{
+  text-decoration: none;
+
+}
+#admin:hover,#enduser:hover
+{
+  background-color: blue;
+
+
+}
+a:hover
+{
+    color:yellow;
+     text-decoration: none;
+}
+#choose1
+{
+  text-align: center;
+}
+#admin,#enduser
+{
+  width: 500px;
+}
+h1,h3,p,#choose1,button
+
+{
+  font-size: 50px;
+}
+#para1
+{
+  font-size: 25px;
+}
+#fb,#insta,#youtube,#con,#em
+{
+  width: 500px;
+}
+#contact,#p2
+{
+  text-align: center;
+  font-size: 25px;
+}
+#newuser
+{
+  
+}
+
+body
+{
+  background-color: #bfb8b6;
+}
+#adminlogin
+{
+  padding: 10px;
+  text-align: center;
+  border-bottom: 10px solid green;
+
+}
+#enduser1
+{
+    padding: 10px;
+
+  text-align: center;
+  border-bottom: 10px solid green;
+
+}
+#aboutandcontact
+{
+  padding: 80px;
+  border-bottom: 10px solid green;
+    border-top: 10px solid green;
+}
+#bl
+{
+  font-size: 10px;
+}

@@ -4,6 +4,7 @@ import Products from "./enduserproducts";
 import Checkout from "./checkout.js";
 import Orders from "./orders";
 import Modadd from "./modadd";
+import Wishlist from './wishlist';
 
 
 
@@ -55,7 +56,8 @@ class Userhome extends Component{
             <Route path="/userprod" component={Products} />
             <Route path="/orders" component={Orders} />
             <Route path="/modadd" component={Modadd} />
-          </Switch>
+            <Route path="/wishlist" component={Wishlist} />
+           </Switch>
             </div>
             </Router>
         );
